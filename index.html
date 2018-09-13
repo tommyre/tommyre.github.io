@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Auction site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Auction site</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="editProfile.html">Edit profile</a></li>
+      <li><a href="newAd.html">New ad</a></li>
+      <li><a href="bidWon.html">Auction won</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <h3>Items</h3>
+
+  <div class="list-group">
+  <a href="item1.html" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h3 class="mb-1">Nice bike for sale</h3>
+      <img src="bike.jpg"></img>
+      <small><b>Highest bid: 500 NOK  | Time left: 23 hours</b></small>
+      <p class="mb-1">Very nice bike.</small>
+    </div>
+  </a>
+  <a href="item1.html" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h3 class="mb-1">Apple MacBook Pro 13,3</h3>
+      <img src="laptop.jpg"></img>
+      <small><b>Highest bid: 8600 NOK  | Time left: 24 hours</b></small>
+      <p class="mb-1">Apple MacBook Pro 13,3 early 2015.</small>
+    </div>
+  </a>
+  <a href="item1.html" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h3 class="mb-1">Apple iPhone 6s</h3>
+      <img src="cellphone.jpeg"></img>
+      <small><b>Highest bid: 5000 NOK  | Time left: 25 hours</b></small>
+      <p class="mb-1">The best phone. Buy it now</small>
+    </div>
+  </a>
+</div>
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1>Login to Your Account</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Username">
+					<input type="password" name="pass" placeholder="Password">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+				  </form>
+
+				  <div class="login-help">
+					<a href="register.html">Register</a> - <a href="#">Forgot Password</a>
+				  </div>
+				</div>
+			</div>
+		  </div>
+</div>
+
+
+</body>
+</html>
